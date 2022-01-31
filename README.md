@@ -104,3 +104,14 @@ $ git commit -m "gitTest_day_1_1"
 <br>
 <font color = "orangered"> 프로젝트 디렉토리의 각 버전이 담기는 저장소</font>
 * ls -al : 디렉토리의 내용을 알고싶을때 사용
+```
+@ commit시 작성자 알리기
+1. 처음으로 커밋을 하기 전 사용자의 이름과 이메일 주소를 설정
+2. 커밋 메세지 남기기(옵션-m)
+3. 커밋할 파일 git add로 남기기
+
+* git config user.name "커밋시 작성자 이름"
+* git config user.email "커밋시 작성자 이메일"
+* git add 파일이름 : 커밋할 파일 이름 
+* git commit -m "커밋메세지" : 옵션-m 변경사항 메세지 
+```
