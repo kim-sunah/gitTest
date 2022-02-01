@@ -17,6 +17,7 @@
 ```
 @git 명령어
 
+
 1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
 $ mkdir MathTool
 
@@ -96,14 +97,154 @@ $ git commit -m "gitTest_day_1_1"
 [master (root-commit) 469b235] gitTest_day_1_1
  1 file changed, 4 insertions(+)
  create mode 100644 calculator.py
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git add calculator.py
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   calculator.py
+
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ mkdir meeting-log
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ meting-log/
+bash: meting-log/: No such file or directory
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ touch day1
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ touch day2
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ cd ..
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ git add meeting-log/
+fatal: pathspec 'meeting-log/' did not match any files
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        MathTool/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ cd meeting-log/
+bash: cd: meeting-log/: No such file or directory
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ cd meeting-log/
+bash: cd: meeting-log/: No such file or directory
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ cd ..
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c
+$ cd meeting-log/
+bash: cd: meeting-log/: No such file or directory
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c
+$ cd gitTest
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest (master)
+$ cd MathTool
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ cd meeting-log
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool/meeting-log (master)
+$ touch day1
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool/meeting-log (master)
+$ touch day2
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool/meeting-log (master)
+$ cd ..
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git add meetging-log/
+fatal: pathspec 'meetging-log/' did not match any files
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git add meeting-log/
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   calculator.py
+        new file:   meeting-log/day1
+        new file:   meeting-log/day2
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        day1
+        day2
+
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   calculator.py
+        new file:   meeting-log/day1
+        new file:   meeting-log/day2
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   calculator.py
+
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git add .
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   calculator.py
+        new file:   meeting-log/day1
+        new file:   meeting-log/day2
+
+
+1004_@DESKTOP-UIK0UTK MINGW64 /c/gitTest/MathTool (master)
+$ git commit -m "git  Test Day 2 'Add title comment and Create meeting-log'"
+[master f999169] git  Test Day 2 'Add title comment and Create meeting-log'
+ 3 files changed, 1 insertion(+)
+ create mode 100644 meeting-log/day1
+ create mode 100644 meeting-log/day2
+
 ```
 * mkdir : 디렉토리 생성
 * ls : 디렉토리 및 파일 출력
 * cd : 작업위치 변경 (디렉토리로 이동)
 * git init : 저장소(repository) 생성
+
 <br>
 <font color = "orangered"> 프로젝트 디렉토리의 각 버전이 담기는 저장소</font>
 * ls -al : 디렉토리의 내용을 알고싶을때 사용
+
 ```
 @ commit시 작성자 알리기
 1. 처음으로 커밋을 하기 전 사용자의 이름과 이메일 주소를 설정
@@ -115,3 +256,19 @@ $ git commit -m "gitTest_day_1_1"
 * git add 파일이름 : 커밋할 파일 이름 
 * git commit -m "커밋메세지" : 옵션-m 변경사항 메세지 
 ```
+
+* git status : 깃이 인식하고 있는 프로젝트 디렉토리의 현재 상태
+<br>
+<font Color = "yellow">- Changes to be committed :
+    (use"git reset HEAD `<file>`..." to unstage)</font>
+<br>
+<font color = "skyblue">=커밋에 반영될 변경사항</font>
+<br>
+<br>
+<font Color = "yellow">-Changes not staged for commit : 
+<br>(use"git add `<file>`..." to update what will be committed)
+<Br>
+(use"git checkout -- `<file>` to discard changes in working directory)</font>
+<br>
+<font color = "skyblue">
+=커밋에 반영되지 않는 변경사항</font>
