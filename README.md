@@ -240,6 +240,8 @@ $ git commit -m "git  Test Day 2 'Add title comment and Create meeting-log'"
 * ls : 디렉토리 및 파일 출력
 * cd : 작업위치 변경 (디렉토리로 이동)
 * git init : 저장소(repository) 생성
+* git add : satging area에 파일 추가
+* git reset : staging aera에서 파일 제거
 
 <br>
 <font color = "orangered"> 프로젝트 디렉토리의 각 버전이 담기는 저장소</font>
