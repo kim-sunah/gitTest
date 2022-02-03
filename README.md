@@ -274,3 +274,11 @@ $ git commit -m "git  Test Day 2 'Add title comment and Create meeting-log'"
 <br>
 <font color = "skyblue">
 =커밋에 반영되지 않는 변경사항</font>
+
+```
+@git 커맨드 사용법
+
+1. git help [알고싶은 커맨드 이름]
+2. man git -[알고싶은 커맨드]
+
+```
